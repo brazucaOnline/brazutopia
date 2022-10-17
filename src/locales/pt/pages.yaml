@@ -1,0 +1,76 @@
+---
+index:
+  catTitle: Navegue Nossas Categorias
+  catDescription: Descubra quantas empresas úteis temos em nosso diretório
+
+about:
+  title: Sobre
+  description: Brazuca Online surgiu com a visão de fornecer aos brasileiros e brasileiras que vivem ou visitam os Estados Unidos uma ferramenta de busca de negócios e serviços prestados unicamente pelos seus conterrâneos na América.
+  text: |
+    Brazuca Online surgiu com a visão de fornecer aos brasileiros e brasileiras que vivem ou visitam os Estados Unidos uma ferramenta de busca de negócios e serviços prestados unicamente pelos seus conterrâneos na América.
+
+    Com a facilidade de expressão por falar a mesma língua e a afinidade brasileira, através do guia de negócios no Brazuca Online tanto o empresário como o cliente se encontram com a finalidade de alcançar o mesmo objetivo: um bom negócio.
+
+    Além do serviço de busca de restaurantes, padarias, artes marciais, advogados, agências de carros, salão de beleza, mecânicas, médicos, todos falando a sua língua, no  [Brazuca Online Services](http://services.brazuca.online) você também tem a oportunidade de:
+
+    - aprender [frases comuns e ditados populares](http://services.brazuca.online/ingles) in englishem inglês
+    - preparar-se para o teste para a [cidadania americana com perguntas e respostas](http://services.brazuca.online/cidadania/governo-americano/princ%C3%ADpios-da-democracia-americana) com áudio
+    - com um diretório de todos os [consulados brasileiros](http://services.brazuca.online/consulado) nos EUA, encontrar um consulado perto de você , além de notificação de consulares itinerantes
+    - preparar-se para o [Teste de Licença de Motorista](http://services.brazuca.online/servicos/teste-online-para-tirar-o-permit) no estado de Massachusetts
+    - entre outras [ferramentas](http://services.brazuca.online/servicos) que se encontra no website
+
+    Nossa missão é facilitar a sua vida na América naquilo em que podermos ajudar.
+
+  trim: Brazuca Online surgiu com a visão de fornecer aos brasileiros e brasileiras que vivem ou visitam os Estados Unidos uma ferramenta de busca de negócios e serviços prestados unicamente pelos seus conterrâneos na América.
+
+  jumbotron:
+    faq: FAQs
+    contact: Fale Conosco
+    listing: Listagem
+    image: https://res.cloudinary.com/brazucacms/image/upload/v1610418735/images/b_rio.jpg
+
+branches:
+  otherLocations: Outras Localidades
+  description: Encontre outras localidades do seu negócio favorito aqui no Brazuca Online.
+
+
+contact:
+  title: Contact
+  text: |
+    Voor vragen kunt u altijd mailen of bellen.
+
+    Tel: [06-43253221](tel:+31643253221)\
+    Email: [krashna@tudelft.nl](mailto:krashna@tudelft.nl)\
+    Facebook: [@krashna](https://www.facebook.com/krashna)\
+    Twitter: [@krashnamusika](https://twitter.com/krashnamusika)
+
+    ### Locatie
+
+    Het bestuur bevindt zich momenteel in [Theater de Veste](https://www.theaterdeveste.nl/), Delft. Als u langs wil komen, stuur dan even een belletje, dan doen wij de buitendeur open. Tijdens repetities zijn wij nog altijd te vinden op [X](https://www.tudelft.nl/en/x/) van de TU Delft (Mekelweg 10, 2628 CD Delft).
+
+    ### Bestuur
+
+    **Bestuur 53 "Pompoen"**
+
+    Voorzitter: Arthur Schoorlemmer ([voorzitter@krashna.nl](mailto:voorzitter@krashna.nl))\
+    Secretaris: Nienke Brouwer ([secretaris@krashna.nl](mailto:secretaris@krashna.nl))\
+    Penningmeester: Mari&euml;tte Sch&ouml;nfeld ([penningmeester@krashna.nl](mailto:penningmeester@krashna.nl))\
+    Acquisiteur en Kamermuziekcommissaris: Rivka Eikelboom ([acquisiteur@krashna.nl](mailto:acquisiteur@krashna.nl) en [kamucom@krashna.nl](mailto:kamucom@krashna.nl))\
+    Orkestcommissaris: Otto Kaaij ([orkestcom@krashna.nl](mailto:orkestcom@krashna.nl))\
+    Koorcommissaris: Anouk de S&eacute;vaux ([koorcom@krashna.nl](mailto:koorcom@krashna.nl))\
+    Publiciteits- en Concertcommissaris: Jochem Schuitemaker ([publicom@krashna.nl](mailto:publicom@krashna.nl) en [concertcom@krashna.nl](mailto:concertcom@krashna.nl))
+
+listing:
+  title: Listagem de Empresas
+
+category:
+  label: Categoria
+
+cuisine:
+  label: Prato
+
+priceRange:
+  label: Faixa de Preço
+
+highlight:
+  label: Destaque

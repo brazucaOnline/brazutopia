@@ -1,0 +1,78 @@
+---
+index:
+  catTitle: Browse Our Categories
+  catDescription: Find out how many useful places we have on our directory
+
+about:
+  title: About us
+  description: Brazuca Online was born with the vision of providing Brazilians&nbsp;living or visiting the United States with a search tool for business and services provided solely by their own countrymen in America.
+  text: |
+    Brazuca Online was born with the vision of providing Brazilians&nbsp;living or visiting the United States with a search tool for business and services provided solely by their own countrymen in America.
+
+    With the ease of expression by speaking the same language and the Brazilian affinity, through the business guide in Brazuca Online both the entrepreneur and the client meet to achieve the same goal: a good business.
+
+    Besides the search for services like&nbsp;restaurants, bakeries, martial arts, lawyers, car agencies, beauty salon, mechanics, doctors, all speaking your language, on [Brazuca Online Services](http://services.brazuca.online) you also have the opportunity to:
+
+    - learning common [phrases and popular sayings](http://services.brazuca.online/ingles) in english
+    - preparing for [US Citizenship Test with Questions and Answers](http://services.brazuca.online/cidadania/governo-americano/princ%C3%ADpios-da-democracia-americana) in Audio
+    - finding a consulate near you, with a directory of all [Brazilian consulates](http://services.brazuca.online/consulado) in the United States, as well as notification of itinerant consular
+    - preparing for the [Driver's Permit Test](http://services.brazuca.online/servicos/teste-online-para-tirar-o-permit) in the State of Massachusetts
+    - among other [tools](http://services.brazuca.online/servicos) that you can find on the website
+
+    Our mission is to make life easier for you in America wherever we can help.
+
+  trim: Brazuca Online was born with the vision of providing Brazilians living or visiting the United States with a search tool for business and services provided solely by their own countrymen in America.
+
+  jumbotron:
+    faq: FAQs
+    contact: Contact Us
+    listing: Listing
+    image: https://res.cloudinary.com/brazucacms/image/upload/v1610418736/images/b_new-york.jpg
+
+branches:
+  otherLocations: Other Locations
+  description: Find other locations of your favorite business here on Brazuca Online.
+
+contact:
+  title: Contact
+  text: |
+    Questions? Don't hesitate to contact us!
+
+    Tel: [06-43253221](tel:+31643253221)\
+    Email: [krashna@tudelft.nl](mailto:krashna@tudelft.nl)\
+    Facebook: [@krashna](https://www.facebook.com/krashna)\
+    Twitter: [@krashnamusika](https://twitter.com/krashnamusika)
+
+    ### Location
+
+    The board can currently be found at [Theater de Veste](https://www.theaterdeveste.nl/), Delft. If you want to pay us a visit, please call us so we can open the outside door for you. During rehearsals, we can still be found at [X](https://www.tudelft.nl/en/x/) of Delft University of Technology (Mekelweg 10, 2628 CD Delft).
+
+    ### Board
+
+    **Board 53 "Pompoen"**
+
+    Chairman: Arthur Schoorlemmer ([voorzitter@krashna.nl](mailto:voorzitter@krashna.nl))\
+    Secretary: Nienke Brouwer ([secretaris@krashna.nl](mailto:secretaris@krashna.nl))\
+    Treasurer: Mari&euml;tte Sch&ouml;nfeld ([penningmeester@krashna.nl](mailto:penningmeester@krashna.nl))\
+    Acquisition and Chambermusic Commissioner: Rivka Eikelboom ([acquisiteur@krashna.nl](mailto:acquisiteur@krashna.nl) and [kamucom@krashna.nl](mailto:kamucom@krashna.nl))\
+    Orchestra Commissioner: Otto Kaaij ([orkestcom@krashna.nl](mailto:orkestcom@krashna.nl))\
+    Choir Commissioner: Anouk de S&eacute;vaux ([koorcom@krashna.nl](mailto:koorcom@krashna.nl))\
+    Promotion and Concert Commissioner: Jochem Schuitemaker ([publicom@krashna.nl](mailto:publicom@krashna.nl) and [concertcom@krashna.nl](mailto:concertcom@krashna.nl))
+
+listing:
+  title: Business Listing
+
+category:
+  label: Category
+
+cuisine:
+  label: Cuisine
+
+priceRange:
+  label: Price Range
+
+highlight:
+  label: Highlight
+
+
+

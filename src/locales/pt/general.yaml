@@ -1,0 +1,69 @@
+---
+slogan: Porque encontrar o que você precisa é o nosso negócio!
+search: Busca
+noSearch: Nenhuma Empresa encontrada!
+openToday: Aberto hoje até
+bizHourStatusOpen: Aberto Agora!
+bizHourStatusClosed: Fechado Agora!
+hourNotAvailable: Horário não disponível
+copyright: Brazuca Online. Todos Direitos Reservados.
+closed: Fechado
+inBiz: No Mercado por
+years: anos
+months: meses
+today: HOJE
+hourNotProvided: Horário não Fornecido
+
+header:
+  home: Início
+  about: Sobre
+  business: Empresas
+  help: Ajuda
+  contact: Fale Conosco
+  image: 'https://res.cloudinary.com/brazucacms/image/upload/v1606596765/logos/brazuca_br-logo.jpg'
+
+footer:
+  help: Ajuda
+  termUse: Termo de Uso
+  privacyPolicy: Política de Privacidade
+
+misc:
+  readMore: Ler mais...
+  hourInfo: O horário de funcionamento aqui se refere à experiência dentro do estabelecimento. Favor entrar em contato com o estabelecimento para o horário de funciomento para entrega, encomenda, marmita ou entrega no carro.
+
+label:
+  cuisine: Pratos
+  highlight: Destaque
+  services: Serviços
+  pay: Pagamento
+  languages: Idiomas
+  photos: Fotos
+  bizHour: Horário de Funcionamento
+  happyHour: Happy Hour
+  tags: Tags
+  fax: Fax
+  extraTel: Extra Phones
+  locations: Localidades
+  categories: Categorias
+  usefulLinks: Links Úteis
+  aboutUs: Sobre
+  brazucaServices: Serviços Brazuca
+  serviceArea: Área de Serviço
+  license: Licença
+  whatsapp: Whatsapp
+  state: Estado
+  city: Cidade
+  cities: Cidades
+
+link:
+  otherLocations: Veja Outras Localidades
+  bookOnline: Reserve Aqui
+  bookService: Agende / Cotação Aqui
+  orderOnline: Peça Aqui
+  enjoy: Aproveite!
+  reservation: Faça Sua Reserva Agora
+  appointment: Faça Seu Agendamento
+
+disclaimerRest: Embora nos esforcemos para trazer as melhores informações, o Brazuca Online não é responsável pela precisão desta página. Em caso de dúvida, verifique com a empresa se as informações que você procura são precisas.
+
+disclaimerServ: Embora nos esforcemos para trazer as melhores informações, o Brazuca Online não é responsável pela precisão desta página e não verifica licenciamento - cancelamento ou término -, cobertura, cancelamento ou término de seguro. Um bom profissional deve ter essas informações prontamente acessível para mostrar a você. Em caso de dúvida, verifique com a devida autoridade se as informações fornecidas estão corretas.

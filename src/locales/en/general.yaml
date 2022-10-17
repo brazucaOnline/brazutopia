@@ -1,0 +1,73 @@
+---
+slogan: Because finding what you need is our business!
+search: Search
+noSearch: No Business found!
+openToday: Open today until
+bizHourStatusOpen: Currently Open!
+bizHourStatusClosed: Currently Closed!
+hourNotAvailable: Hours not available
+copyright: Brazuca Online. All Rights Reserved.
+closed: Closed
+inBiz: In Business for
+years: years
+months: months
+today: TODAY
+hourNotProvided: Hours not Provided
+
+header:
+  home: Home
+  about: About
+  business: Businesses
+  help: Help
+  contact: Contact us
+  image: 'https://res.cloudinary.com/brazucacms/image/upload/v1606596374/logos/brazuca_us-logo_fht8wu.jpg'
+
+footer:
+  help: Help
+  termUse: Term of Use
+  privacyPolicy: Private Policy
+
+misc:
+  readMore: Read more...
+  biz-hour-info: Business hour is used here for the dine-in experience. Please contact the business for delivery, catering, carry-out or curbside pick-up hours.
+
+label:
+  cuisine: Cuisine
+  highlight: Highlight
+  services: Services
+  pay: Payment
+  languages: Languages
+  photos: Photos
+  bizHour: Business Hours
+  happyHour: Happy Hour
+  tags: Tags
+  extraTel: Extra Phones
+  fax: Fax
+  locations: Locations
+  categories: Categories
+  usefulLinks: Useful Links
+  aboutUs: About Us
+  brazucaServices: Brazuca Services
+  serviceArea: Service Area
+  license: License
+  whatsapp: Whatsapp
+  state: State
+  city: City
+  cities: Cities
+
+link:
+  otherLocations: View Other Locations
+  bookOnline: Book Online
+  bookService: Book / Quote Online
+  orderOnline: Order Online
+  enjoy: Enjoy it!
+  reservation: Make a Reservation
+  appointment: Make an Appointment
+
+disclaimerRest: Even though we strive to bring the best information, Brazuca Online is not responsible for the accuracy of this page. In doubt, check with the business to make sure the information you seek is accurate.
+
+disclaimerServ: Even though we strive to bring the best information, Brazuca Online is not responsible for the accuracy of this page, and does not verify licensing - cancellation or expiration -, or insurance coverage, cancellation or expiration. A good professional should have this information promptly to show you. In doubt, check with the proper authority to make sure the information provided is accurate.
+
+
+
+
