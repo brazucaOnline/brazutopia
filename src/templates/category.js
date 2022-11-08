@@ -104,66 +104,71 @@ class CategoryTemplate extends React.Component {
 }
 
 export const query = graphql`
-  query categoryQuery($slug: String!) {
+  query categoryQuery($slug: String!, $skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
       }
     }
     category: contentfulCategory(
-      slug: { eq: $slug },
-      node_locale: {eq: "pt"}
+      slug: { eq: $slug }
+      node_locale: { eq: "pt" }
     ) {
+      name
+      description {
+        description
+      }
+      restaurant {
+        id
         name
-        description {
-          description
-        }
-        restaurant {
-          id
+        slug
+        street
+        city {
           name
           slug
-          street
-          city {
-            name
-            slug
-          }
-          state {
-            stateCode
-          }
-          postalCode
-          tel
-          website
-          imageBanner {
-            url
-            id
-          }
-          createdAt
-          node_locale
         }
-        service {
+        state {
+          stateCode
+        }
+        postalCode
+        tel
+        website
+        imageBanner {
+          url
           id
+        }
+        createdAt
+        node_locale
+      }
+      service {
+        id
+        name
+        slug
+        street
+        city {
           name
           slug
-          street
-          city {
-            name
-            slug
-          }
-          state {
-            stateCode
-          }
-          postalCode
-          tel
-          website
-          imageBanner {
-            url
-            id
-          }
-          createdAt
-          node_locale
         }
+        state {
+          stateCode
+        }
+        postalCode
+        tel
+        website
+        imageBanner {
+          url
+          id
+        }
+        createdAt
+        node_locale
+      }
     }
-    categoriesPt: allContentfulCategory(filter: {node_locale: {eq: "pt"}}) {
+    categoriesPt: allContentfulCategory(
+      filter: { node_locale: { eq: "pt" } }
+      sort: { fields: name }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           name

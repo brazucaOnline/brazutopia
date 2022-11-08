@@ -54,6 +54,7 @@ const PrivacyPage = () => (
                 <a
                   href='https://support.microsoft.com/pt-br/help/278835/how-to-delete-cookie-files-in-internet-explorer'
                   target='_blank'
+                  rel="noreferrer"
                 >
                   {' '}
                   instruções aqui
@@ -64,6 +65,7 @@ const PrivacyPage = () => (
                 <a
                   href='https://support.mozilla.org/pt-BR/kb/exclua-cookies-para-remover-info-armazenadas'
                   target='_blank'
+                  rel="noreferrer"
                 >
                   {' '}
                   instruções aqui
@@ -74,6 +76,7 @@ const PrivacyPage = () => (
                 <a
                   href='https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=pt-BR'
                   target='_blank'
+                  rel="noreferrer"
                 >
                   {' '}
                   instruções aqui
@@ -90,6 +93,7 @@ const PrivacyPage = () => (
                 <a
                   href='https://support.microsoft.com/pt-br/help/17442/windows-internet-explorer-delete-manage-cookies'
                   target='_blank'
+                  rel="noreferrer"
                 >
                   {' '}
                   instruções aqui
@@ -100,6 +104,7 @@ const PrivacyPage = () => (
                 <a
                   href='https://support.mozilla.org/pt-BR/kb/ative-e-desative-os-cookies-que-os-sites-usam'
                   target='_blank'
+                  rel="noreferrer"
                 >
                   {' '}
                   instruções aqui
@@ -110,6 +115,7 @@ const PrivacyPage = () => (
                 <a
                   href='https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=pt-BR'
                   target='_blank'
+                  rel="noreferrer"
                 >
                   {' '}
                   instruções aqui

@@ -70,6 +70,7 @@ const ServiceTemplate = ({ data }) => {
     license,
     whatsapp,
     extraTels,
+    amazonLinks,
   } = service
 
   // Booking and Ordering Links
@@ -105,7 +106,27 @@ const ServiceTemplate = ({ data }) => {
       </section>
     ) : (
       ''
-    )
+      )
+  
+    const amazonItem = amazonLinks.map((amazonItem) => {
+      return amazonItem.item
+    })
+
+    const AmazonSec =
+      amazonItem[0] !== 'null' ? (
+        <section className='biz-main__content'>
+          <AiOutlineSafetyCertificate className='biz-main__icon' />
+          <div className='biz-main__list'>
+            <h5 className='content-label'>{General.label.license}:</h5>
+            {amazonLinks.map((i) => {
+              return <iframe title="amazon links" key={i.id} sandbox={i.item}></iframe>
+            })}
+          </div>
+        </section>
+      ) : (
+        ''
+      )
+  
 
   const emailSec =
     email !== 'null' ? (
@@ -412,15 +433,16 @@ const ServiceTemplate = ({ data }) => {
                   <section className='disclaimer'>
                     <p>{General.disclaimerServ}</p>
                   </section>
+                  {AmazonSec}
                 </main>
                 <aside className='aside'>
                   {/* <section className='biz-aside__lang aside__items'>
                     <div className='aside-section'> */}
-                      {/* <h2 className='block-title h-2'>
+                  {/* <h2 className='block-title h-2'>
                         {General.label.languages}
                       </h2> */}
-                      {/* <LanguageSwitch /> */}
-                    {/* </div>
+                  {/* <LanguageSwitch /> */}
+                  {/* </div>
                   </section> */}
                   {foundedIn !== 'null' ? (
                     <section className='biz-aside__years aside__items'>
@@ -648,6 +670,10 @@ export const query = graphql`
       }
       gallery {
         url
+        id
+      }
+      amazonLinks {
+        item
         id
       }
     }

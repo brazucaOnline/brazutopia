@@ -6,7 +6,8 @@ export default styled.div`
   /* z-index: -3; */
 
   .biz-node {
-    .block-title, .search-title {
+    .block-title,
+    .search-title {
       font-family: 'Raleway', Arial, sans-serif;
       font-size: 2rem;
       color: #2b2b2b;
@@ -19,19 +20,22 @@ export default styled.div`
     .block-title::after {
       content: '';
       width: 6rem;
-      height: .2rem;
+      height: 0.2rem;
       background: ${color.primary};
       position: absolute;
       bottom: 0;
       left: 0;
     }
     a.underlined {
-      color: rgba(0,0,0,.847);
-      background-image: linear-gradient(${color.colorYellow}, ${color.colorYellow});
+      color: rgba(0, 0, 0, 0.847);
+      background-image: linear-gradient(
+        ${color.colorYellow},
+        ${color.colorYellow}
+      );
       background-position: 50% 100%;
       background-repeat: no-repeat;
       background-size: 0% 3px;
-      transition: background-size .2s;
+      transition: background-size 0.2s;
     }
 
     a:hover {
@@ -46,8 +50,8 @@ export default styled.div`
     }
 
     .biz-clock {
-      width: .8em;
-      height: .8em;
+      width: 0.8em;
+      height: 0.8em;
     }
 
     .biz-open {
@@ -73,7 +77,11 @@ export default styled.div`
       display: grid;
       /* grid-template-columns: repeat(12, 1fr); */
 
-      background-image: radial-gradient(farthest-corner at 40px 40px,rgba(3,122,33,0.75) 0%,rgba(100,107,2,0.75) 100%);
+      background-image: radial-gradient(
+        farthest-corner at 40px 40px,
+        rgba(3, 122, 33, 0.75) 0%,
+        rgba(100, 107, 2, 0.75) 100%
+      );
 
       justify-content: center;
       align-items: end;
@@ -119,7 +127,7 @@ export default styled.div`
         grid-column: 4 / 8;
         transform: translate(-3rem, 27rem);
 
-        background-color: rgba(35, 34, 31, .6);
+        background-color: rgba(35, 34, 31, 0.6);
         font-size: 1.8rem;
         font-weight: 400;
         color: #fff;
@@ -133,15 +141,15 @@ export default styled.div`
           width: 2rem;
           height: 2rem;
           fill: #fff;
-          margin-right: .5rem;
+          margin-right: 0.5rem;
         }
 
         div {
-          padding-bottom: .4rem;
+          padding-bottom: 0.4rem;
         }
 
         #business-name {
-          border-bottom: 1px solid rgba(255, 255, 255, .4);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
           margin-bottom: 1.5rem;
           padding-top: 2rem;
           padding-bottom: 1.5rem;
@@ -150,7 +158,9 @@ export default styled.div`
           font-weight: 300;
         }
 
-        a, p, li {
+        a,
+        p,
+        li {
           font-size: 1.7rem;
           font-weight: 400;
           color: #fff;
@@ -161,7 +171,7 @@ export default styled.div`
         display: flex;
 
         div {
-            margin-right: 2rem;
+          margin-right: 2rem;
         }
       }
 
@@ -171,7 +181,7 @@ export default styled.div`
 
       &__bottom {
         margin-left: 1rem;
-        transform: translate(-.4rem, -1rem);
+        transform: translate(-0.4rem, -1rem);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -201,9 +211,11 @@ export default styled.div`
         background-color: #fff;
         padding: 0 3rem;
 
-        a, p, div {
-            font-size: 1.8rem;
-            font-weight: 400;
+        a,
+        p,
+        div {
+          font-size: 1.8rem;
+          font-weight: 400;
         }
 
         .description {
@@ -213,8 +225,8 @@ export default styled.div`
           border-bottom: 1px solid #ccc;
 
           text-align: center;
-          letter-spacing: .3rem;
-          word-spacing: .4rem;
+          letter-spacing: 0.3rem;
+          word-spacing: 0.4rem;
           line-height: 1.7;
         }
 
@@ -224,7 +236,7 @@ export default styled.div`
           padding: 1rem;
           color: #fff;
           color: ${color.primary};
-          border: 3px solid ${color.primary}
+          border: 3px solid ${color.primary};
         }
 
         &__content {
@@ -257,8 +269,9 @@ export default styled.div`
           line-height: 1.7;
 
           img {
-            width: 85%;
-            border: 1px solid #ccc;
+            width: 80%;
+            margin-right: -1.5rem;
+            /* border: 1px solid #ccc; */
           }
         }
 
@@ -297,24 +310,24 @@ export default styled.div`
           display: inline-block;
           background-color: transparent;
           cursor: pointer;
-          transition: all .2s;
+          transition: all 0.2s;
 
           & span {
             margin-left: 3px;
-            transition: margin-left .2s;
+            transition: margin-left 0.2s;
           }
 
           &:hover {
-              color: ${color.secondary};
+            color: ${color.secondary};
 
-              span {
-                margin-left: 8px;
-              }
+            span {
+              margin-left: 8px;
+            }
           }
 
           &:focus {
-              outline: none;
-              animation: pulsate 1s infinite;
+            outline: none;
+            animation: pulsate 1s infinite;
           }
         }
       }
@@ -324,21 +337,21 @@ export default styled.div`
         margin-top: 2rem;
 
         .aside-section {
-            background-color: #fff;
-            padding: 3rem;
-            font-size: 1.4rem;
+          background-color: #fff;
+          padding: 3rem;
+          font-size: 1.4rem;
 
           .aside-label {
             display: flex;
 
             .block-label {
-                  font-family: 'Raleway', Arial, sans-serif;
-                  font-size: 1.6rem;
-                  color: ${color.primary};
+              font-family: 'Raleway', Arial, sans-serif;
+              font-size: 1.6rem;
+              color: ${color.primary};
             }
 
             .blm {
-              margin: 0 0 2rem .5rem;
+              margin: 0 0 2rem 0.5rem;
             }
           }
         }
@@ -355,7 +368,9 @@ export default styled.div`
           padding-bottom: 1.2rem;
         }
 
-        a, p, div {
+        a,
+        p,
+        div {
           font-size: 1.6rem;
           font-weight: 400;
         }
@@ -369,20 +384,20 @@ export default styled.div`
           height: 2rem;
           fill: ${color.primary};
           float: left;
-          margin: -.5rem .5rem 0 0;
+          margin: -0.5rem 0.5rem 0 0;
         }
 
         .lang {
           margin-right: 3.5rem;
 
           &-img {
-            box-shadow: .2rem .4rem .5rem rgba(0, 0, 0, 0.2);
-            transition: all .2s ease-in-out;
+            box-shadow: 0.2rem 0.4rem 0.5rem rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease-in-out;
             z-index: 10;
 
             &:hover {
-              transform: scale(1.3) translateY(.5rem);
-              outline-offset: .4rem;
+              transform: scale(1.3) translateY(0.5rem);
+              outline-offset: 0.4rem;
               z-index: 20;
             }
           }
@@ -390,92 +405,93 @@ export default styled.div`
 
         ul {
           .photo-item {
-              margin-right: 3.6rem;
+            margin-right: 3.6rem;
           }
 
           .photo-item:last-child {
-              margin-right: 0;
+            margin-right: 0;
           }
-            img {
-              box-shadow: .2rem 0.4rem .5rem rgba(0, 0, 0, 0.3);
-              transition: all .2s;
-              z-index: 10;
+          img {
+            box-shadow: 0.2rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: all 0.2s;
+            z-index: 10;
 
-              &:hover {
-                outline: .4rem solid ${color.secondary};
-                transform: scale(1.3) translateY(.5rem);
-                box-shadow: .2rem 0.4rem 1rem rgba(0, 0, 0, 0.5);
-                outline-offset: .4rem;
-                z-index: 20;
-              }
+            &:hover {
+              outline: 0.4rem solid ${color.secondary};
+              transform: scale(1.3) translateY(0.5rem);
+              box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.5);
+              outline-offset: 0.4rem;
+              z-index: 20;
             }
           }
         }
+      }
 
-        .biz-aside__years {
-          color: #c55c00;
+      .biz-aside__years {
+        color: #c55c00;
+      }
+
+      .biz-aside__links {
+        display: flex;
+        justify-content: center;
+
+        a:hover {
+          padding-bottom: 0;
         }
 
-        .biz-aside__links {
-          display: flex;
-          justify-content: center;
+        .aside-section {
+          padding: 3rem 2.6rem;
+          background-color: transparent;
+        }
+      }
 
-          a:hover {
-            padding-bottom: 0;
-          }
+      .links {
+        padding: 3rem 1.6rem;
+      }
 
-          .aside-section {
-            padding: 3rem 2.6rem;
-            background-color: transparent;
-          }
+      .aside-biz-status {
+        transform: translateY(-5px);
+
+        .biz-open {
+          color: ${color.secondary};
+        }
+        .biz-closed {
+          color: ${color.colorRed};
         }
 
-        .links {
-          padding: 3rem 1.6rem;
+        .biz-hour-short,
+        .biz-clock {
+          display: none;
         }
+      }
 
-        .aside-biz-status {
-          transform: translateY(-5px);
+      table {
+        /*Business hours*/
+        font-size: 1.6rem;
 
-          .biz-open {
-            color: ${color.secondary}
-          }
-          .biz-closed {
-            color: ${color.colorRed}
-          }
-
-          .biz-hour-short,
-          .biz-clock {
-            display: none;
-          }
+        .hour-tab {
+          padding-left: 2rem;
         }
-
-        table { /*Business hours*/
-          font-size: 1.6rem;
-
-          .hour-tab {
-              padding-left: 2rem;
-          }
-          .hour-bold {
-            color: #c3b608;
-          }
+        .hour-bold {
+          color: #c3b608;
         }
+      }
 
-        .hour-disclaimer {
-          text-align: center;
-          color: #f80909;
-          border: 1px solid #eee;
-          margin-top: 1rem;
-          padding: 1.5rem;
-        }
+      .hour-disclaimer {
+        text-align: center;
+        color: #f80909;
+        border: 1px solid #eee;
+        margin-top: 1rem;
+        padding: 1.5rem;
+      }
 
-        .happy-hour table {
-          font-size: 1.5rem;
+      .happy-hour table {
+        font-size: 1.5rem;
 
-          .hour-tab {
-            padding-left: 1rem;
-          }
+        .hour-tab {
+          padding-left: 1rem;
         }
       }
     }
+  }
 `

@@ -4,9 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require('path');
-const fs = require("fs-extra");
-const yaml = require("js-yaml");
+const path = require('path')
+const fs = require('fs-extra')
+const yaml = require('js-yaml')
 const flatten = require('flat')
 
 // const {createFilePath} = require(`gatsby-source-filesystem`);
@@ -31,7 +31,6 @@ const flatten = require('flat')
 //   );
 // };
 
-
 // pages locale
 // exports.onCreatePage = ({ page, actions }) => {
 //   const { createPage, deletePage } = actions
@@ -46,10 +45,10 @@ const flatten = require('flat')
 //   })
 // }
 
-exports.createPages = async ({graphql, actions}) => {
-  const {createPage} = actions
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
-  const {data} = await graphql(`
+  const { data } = await graphql(`
     query {
       restaurants: allContentfulRestaurant {
         edges {
@@ -112,6 +111,7 @@ exports.createPages = async ({graphql, actions}) => {
         }
       }
       categories: allContentfulCategory {
+        totalCount
         edges {
           node {
             id
@@ -163,7 +163,7 @@ exports.createPages = async ({graphql, actions}) => {
     }
   `)
 
-  data.restaurants.edges.forEach(({node}) => {
+  data.restaurants.edges.forEach(({ node }) => {
     createPage({
       path: `/restaurant/${node.slug}/${node.city.slug}`,
       component: path.resolve(`./src/templates/restaurant.js`),
@@ -171,11 +171,11 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
 
-  data.services.edges.forEach(({node}) => {
+  data.services.edges.forEach(({ node }) => {
     createPage({
       path: `/service/${node.slug}/${node.city.slug}`,
       component: path.resolve(`./src/templates/service.js`),
@@ -183,11 +183,11 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
 
-  data.state.edges.forEach(({node}) => {
+  data.state.edges.forEach(({ node }) => {
     createPage({
       path: `/state/${node.slug}/`,
       component: path.resolve(`./src/templates/state.js`),
@@ -195,11 +195,11 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
 
-  data.city.edges.forEach(({node}) => {
+  data.city.edges.forEach(({ node }) => {
     createPage({
       path: `/city/${node.slug}/`,
       component: path.resolve(`./src/templates/city.js`),
@@ -207,11 +207,11 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
 
-  data.serviceArea.edges.forEach(({node}) => {
+  data.serviceArea.edges.forEach(({ node }) => {
     createPage({
       path: `/service-area/${node.slug}/`,
       component: path.resolve(`./src/templates/serviceArea.js`),
@@ -219,11 +219,11 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
 
-  data.branches.edges.forEach(({node}) => {
+  data.branches.edges.forEach(({ node }) => {
     createPage({
       path: `/branches/${node.slug}/`,
       component: path.resolve(`./src/templates/branches.js`),
@@ -231,22 +231,43 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
 
-  data.categories.edges.forEach(({node}) => {
-    createPage({
-      path: `/category/${node.slug}/`,
-      component: path.resolve(`./src/templates/category.js`),
-      context: {
-        id: node.id,
-        contentful_id: node.contentful_id,
-        slug: node.slug,
-      }
+  // data.categories.edges.forEach(({node}) => {
+  //   createPage({
+  //     path: `/category/${node.slug}/`,
+  //     component: path.resolve(`./src/templates/category.js`),
+  //     context: {
+  //       id: node.id,
+  //       contentful_id: node.contentful_id,
+  //       slug: node.slug,
+  //     }
+  //   })
+  // })
+  const {totalCount} = data.categories
+  const catsPerPage = 10
+  const numPages = Math.ceil(totalCount / catsPerPage)
+  data.categories.edges.forEach(({ node }) => {
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/category/${node.slug}` : `/category/${node.slug}/${i + 1}`,
+        component: path.resolve(`./src/templates/category.js`),
+        context: {
+          id: node.id,
+          contentful_id: node.contentful_id,
+          slug: node.slug,
+          limit: catsPerPage,
+          skip: i * catsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      })
     })
   })
-  data.cuisine.edges.forEach(({node}) => {
+
+  data.cuisine.edges.forEach(({ node }) => {
     createPage({
       path: `/cuisine/${node.slug}/`,
       component: path.resolve(`./src/templates/cuisine.js`),
@@ -254,10 +275,10 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
-  data.service.edges.forEach(({node}) => {
+  data.service.edges.forEach(({ node }) => {
     createPage({
       path: `/services/${node.slug}/`,
       component: path.resolve(`./src/templates/services.js`),
@@ -265,10 +286,10 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
-  data.tag.edges.forEach(({node}) => {
+  data.tag.edges.forEach(({ node }) => {
     createPage({
       path: `/tag/${node.slug}/`,
       component: path.resolve(`./src/templates/tag.js`),
@@ -276,10 +297,10 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
-  data.highlight.edges.forEach(({node}) => {
+  data.highlight.edges.forEach(({ node }) => {
     createPage({
       path: `/highlight/${node.slug}/`,
       component: path.resolve(`./src/templates/highlight.js`),
@@ -287,10 +308,10 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
-  data.price.edges.forEach(({node}) => {
+  data.price.edges.forEach(({ node }) => {
     createPage({
       path: `/price-range/${node.slug}/`,
       component: path.resolve(`./src/templates/price-range.js`),
@@ -298,11 +319,10 @@ exports.createPages = async ({graphql, actions}) => {
         id: node.id,
         contentful_id: node.contentful_id,
         slug: node.slug,
-      }
+      },
     })
   })
-};
-
+}
 
 // function loadTranslationObject(languageCode) {
 //   const srcPath = path.join(__dirname, `/src/locales/${languageCode}/`);
@@ -311,5 +331,3 @@ exports.createPages = async ({graphql, actions}) => {
 //   ));
 //   return Object.assign({}, ...translationObjects)
 // }
-
-

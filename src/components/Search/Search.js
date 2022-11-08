@@ -12,6 +12,7 @@ import {
   Stats,
   InstantSearch,
   SearchBox,
+  Pagination,
 } from "react-instantsearch-dom"
 
 const searchClient = algoliasearch(
@@ -171,7 +172,10 @@ class Search extends React.Component {
             }
           }}
         />
-        <Hits hitComponent={Hit} />
+        <Hits hitComponent={ Hit } />
+        <div className='pagination'>
+          <Pagination />
+        </div>
       </Results>
     </InstantSearch>
   }

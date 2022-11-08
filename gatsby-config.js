@@ -63,6 +63,9 @@ module.exports = {
         indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
         queries: algoliaQueries,
         chunkSize: 10000, // default: 1000
+        settings: {
+          hitsPerPage: 3,
+        },
       },
     },
   ],
